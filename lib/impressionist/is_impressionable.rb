@@ -15,7 +15,7 @@ module Impressionist
       def define_association
         has_many(:impressions,
         :as => :impressionable,
-        :dependent => :delete_all)
+        :dependent => :destroy)
       end
     end
 
